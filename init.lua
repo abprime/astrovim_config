@@ -16,43 +16,38 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
-
   -- Set colorscheme to use
-  colorscheme = "astrodark",
-
+  colorscheme = "catppuccin",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
     underline = true,
+    serverity_sort = true,
   },
-
   lsp = {
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
-      format_on_save = {
-        enabled = true, -- enable or disable format on save globally
-        allow_filetypes = { -- enable format on save for specified filetypes only
-          -- "go",
-        },
-        ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
-        },
-      },
+      format_on_save = true,
       disabled = { -- disable formatting capabilities for the listed language servers
         -- "sumneko_lua",
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 3000, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {
-      -- "pyright"
+    servers = {},
+    -- config
+    config = {
+      sourcery = {
+        init_options = {
+          token = "user_LPE7Bzc84n_S5ZbQmJwZqkWfhtUd0wt7eDd2TfEfsgmLVb0QZYA858RCy9s",
+        },
+      },
     },
   },
-
   -- Configure require("lazy").setup() options
   lazy = {
     defaults = { lazy = true },
@@ -62,6 +57,15 @@ return {
         disabled_plugins = { "tohtml", "gzip", "matchit", "zipPlugin", "netrwPlugin", "tarPlugin" },
       },
     },
+  },
+  -- add new user interface icons
+  icons = {
+    VimIcon = "",
+    ScrollText = "",
+    GitBranch = "",
+    GitAdd = "",
+    GitChange = "",
+    GitDelete = "",
   },
 
   -- This function is run last and is a good place to configuring

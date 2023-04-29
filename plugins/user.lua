@@ -9,4 +9,12 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "takac/vim-hardtime",
+    opts = {},
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
 }
