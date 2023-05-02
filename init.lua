@@ -58,15 +58,6 @@ return {
       },
     },
   },
-  -- add new user interface icons
-  icons = {
-    VimIcon = "",
-    ScrollText = "",
-    GitBranch = "",
-    GitAdd = "",
-    GitChange = "",
-    GitDelete = "",
-  },
 
   -- modify variables used by heirline but not defined in the setup call directly
   heirline = {

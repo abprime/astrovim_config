@@ -1,4 +1,4 @@
-return {
+codicons_config = {
   {
     "onsails/lspkind.nvim",
     opts = function(_, opts)
@@ -20,3 +20,4 @@ return {
     end,
   },
 }
+return codicons_config
