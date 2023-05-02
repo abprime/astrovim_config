@@ -1,4 +1,4 @@
-nvchad_statusline_config = {
+local nvchad_statusline_config = {
   "rebelot/heirline.nvim",
   opts = function(_, opts)
     local status = require "astronvim.utils.status"

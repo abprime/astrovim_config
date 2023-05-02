@@ -1,4 +1,4 @@
-codicons_config = {
+local codicons_config = {
   {
     "onsails/lspkind.nvim",
     opts = function(_, opts)
