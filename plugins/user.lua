@@ -17,4 +17,8 @@ return {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+  {
+    "wakatime/vim-wakatime",
+    event = "User AstroFile",
+  },
 }
