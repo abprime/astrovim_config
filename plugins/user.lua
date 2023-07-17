@@ -13,10 +13,10 @@ return {
     "takac/vim-hardtime",
     opts = {},
   },
-  {
-    "christoomey/vim-tmux-navigator",
-    lazy = false,
-  },
+  -- {
+  --   "christoomey/vim-tmux-navigator",
+  --   lazy = false,
+  -- },
   {
     "wakatime/vim-wakatime",
     event = "User AstroFile",

@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
